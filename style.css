@@ -3,11 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-::-webkit-scrollbar{
-    display: none;
-}
+
 body{
     background-color: rgb(59, 59, 59);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    
 }
 .bc{
     display: flex;
