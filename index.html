@@ -22,7 +22,9 @@
         let shareOfWife = tm/8;
         let shareOfSon = tm - shareOfWife;
         let finalm = 'total amount is ' + tm + ' and the share of wife is ' + shareOfWife + ' and the share of son is ' + shareOfSon;
-        document.getElementById('mr').innerText = finalm;
+        let mr = document.getElementById('mr');
+        mr.style.display ='block';
+        mr.innerText = finalm;
     
         ">calculate miras</button>
                 <p id="mr"></p>
@@ -36,7 +38,9 @@
         let salahInOneyear = 5*365;
         let totalSalah = salahInOneyear*umar;       
         let finalq = 'you must perform ' + totalSalah + ' salah as qaza'; 
-        document.getElementById('qr').innerText = finalq;
+        let qr = document.getElementById('qr');
+        qr.style.display ='block';
+        qr.innerText = finalq;
     
         ">Calculate salah</button>
                 <p id="qr"></p>
@@ -48,7 +52,9 @@
         let tz = document.getElementById('tz').value;
         let zakat = tz/40; 
         let finalz = 'The zakat on ' + tz + ' is ' + zakat; 
-        document.getElementById('zr').innerText = finalz;
+        let zr = document.getElementById('zr');
+        zr.style.display ='block';
+        zr.innerText = finalz;
     
         ">Calculate zakat</button>
                 <p id="zr"></p>
@@ -66,7 +72,10 @@
         let firstPS = tsp/100*tpp;
         let sPS = tpp - tsp; 
         let finalp = 'first person has ' + tsp +'% share. So his profit is '+firstPS+' and the second person has '+stsp+'% share. So his profit is '+sPS;         
-        document.getElementById('pr').innerHTML = finalp;
+        let pr = document.getElementById('pr');
+        pr.style.display ='block';
+        pr.innerHTML = finalp;
+        
     
         ">Calculate Profit</button>
                 <p id="pr"></p>
