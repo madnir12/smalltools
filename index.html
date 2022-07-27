@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bc">
+        <div class="center">
+            <h1>Small Tools</h1>
+            <div class="mainC">
+                <!-- starting a program which will calculate the share of and the share of son in miras -->
+                <h1>Miras Calculator</h1>
+                <input type="text" id="tm" placeholder="enter the total amount">
+                <button id="btnz" onclick="
+        let tm = document.getElementById('tm').value;
+        let shareOfWife = tm/8;
+        let shareOfSon = tm - shareOfWife;
+        let finalm = 'total amount is ' + tm + ' and the share of wife is ' + shareOfWife + ' and the share of son is ' + shareOfSon;
+        document.getElementById('mr').innerText = finalm;
+    
+        ">calculate miras</button>
+                <p id="mr"></p>
+                <!-- end of miras tool -->
+                <!-- starting program which will calculate the qaza maz -->
+                <h1>Qaza Namaz Calculator</h1>
+                <input type="number" id="tq" placeholder="Enter your age">
+                <button id="btnz" onclick="
+        let tq = document.getElementById('tq').value;
+        let umar = tq - 12;
+        let salahInOneyear = 5*365;
+        let totalSalah = salahInOneyear*umar;       
+        let finalq = 'you must perform ' + totalSalah + ' salah as qaza'; 
+        document.getElementById('qr').innerText = finalq;
+    
+        ">Calculate salah</button>
+                <p id="qr"></p>
+                <!-- end qaza namaz program -->
+                <!-- starting program which will calculat the zakat -->
+                <h1>Zakat Calculator</h1>
+                <input type="number" id="tz" placeholder="Enter your total amount">
+                <button onclick="
+        let tz = document.getElementById('tz').value;
+        let zakat = tz/40; 
+        let finalz = 'The zakat on ' + tz + ' is ' + zakat; 
+        document.getElementById('zr').innerText = finalz;
+    
+        ">Calculate zakat</button>
+                <p id="zr"></p>
+                <!-- end zakat prigram -->
+                <!-- starting program which will calculate the profit of two person according the share they are holding -->
+                <div>
+                     <h1>Profit Calculator </h1>
+                        <input type="number" id="tsp" placeholder="Enter first persons share">
+                        <input type="number" id="tpp" placeholder="Enter total profit">
+                </div>
+                <button onclick="
+        let tsp = document.getElementById('tsp').value;
+        let stsp = 100 - tsp;
+        let tpp = document.getElementById('tpp').value;
+        let firstPS = tsp/100*tpp;
+        let sPS = tpp - tsp; 
+        let finalp = 'first person has ' + tsp +'% share. So his profit is '+firstPS+' and the second person has '+stsp+'% share. So his profit is '+sPS;         
+        document.getElementById('pr').innerHTML = finalp;
+    
+        ">Calculate Profit</button>
+                <p id="pr"></p>
+                <!-- end profit program -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
